@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beike.hcc.blog.mapper.CommentMapper">
+    <resultMap id="BaseResultMap" type="com.beike.hcc.blog.model.Comment">
+        <id column="comment_id" javaType="Integer" property="commentId"/>
+        <result column="register_time" javaType="TIMESTAMP" property="updateTime"/>
+        <result column="user_id" javaType="INTEGER" property="userId"/>
+        <result column="article_id" javaType="INTEGER" property="articleId"/>
+    </resultMap>
+    <select id="selectCommentById" parameterType="java.long.Integer" resultType="BaseResultMap" >
+        selcet * from t_hcc_comment where comment_id=#{commentId}
+    </select>
+
+    <select id="selectCommentByArticleId" parameterType="java.long.Integer" resultType="BaseResultMap">
+        select * from t_hcc_comment where article_id=#{article_id}
+    </select>
+
+    <select id="selectCommentByUserId" parameterType="java.lang.Integer" resultType="BaseResultMap">
+        select * from t_hcc_comment where user_id=#{userId}
+    </select>
+
+    <delete id="delectCommentById" parameterType="java.lang.Integer">
+        delete from t_hcc_comment where comment_id=#{comment_id}
+    </delete>
+
+    <delete id="deleteCommentByArticleId" parameterType="java.lang.Integer">
+        delete from t_hcc_comment where article_id=#{articleId}
+    </delete>
+    <delete id="deleteCommentByUserID" parameterType="java.lang.Integer">
+        delete from t_hcc_comment where user_id=#{userID}
+    </delete>
+    <update id="updateComment" parameterType="com.beike.hcc.blog.model.Comment">
+        update t_hcc_comment
+        set user_id=#{userID}
+        article_id=#{articleID}
+        update_time=#{updateTime}
+        where comment_id=#{comment_id}
+    </update>
+
+    <insert id="insertComment" parameterType="com.beike.hcc.blog.model.Comment">
+        insert t_hcc_comment (user_id,article_id,register_time)
+        values (#{user_id},#{articleID},#{updateTime})
+    </insert>
+</mapper>
