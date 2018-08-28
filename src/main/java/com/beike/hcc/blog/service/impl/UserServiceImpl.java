@@ -17,6 +17,7 @@ public class UserServiceImpl implements UserService {
     //根据用户ID查询用户信息
     public User selectUserById(Integer userId){
         User user=userMapper.seleteUserById(userId);
+        return user;
 
     }
     //修改用户信息

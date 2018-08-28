@@ -1,9 +1,11 @@
 #数据库的配置
-datasource:
-    url:
-    username: hdic_admin
-    password: 654321
-    driverClassName: com.mysql.jdbc.Driver
+jdbc:
+  datasource:
+    convention:
+      url: jdbc:mysql://10.33.106.50:3306/test # @Value("${jdbc.datasource.convention.username}")
+      username: hdic_admin
+      password: 654321
+      driverClassName: com.mysql.jdbc.Driver
     #下面为连接池的补充设置，应用到上面所有数据源中# 初始化大小，最小，最大
         initialSize: 5
         minIdle: 5
@@ -31,7 +33,10 @@ freemarker:
     content-type: text/html
     cache: false #缓存配置
     charset: UTF-8 #编码格式
-    settings:
-    number_format: '0.##'   #数字格式化，无小数点
+
+    suffix: .ftl  #后缀名
+    enabled: true
+    template-loader-path: classpath:/templates/ #模板加载路径 按需配置
+
 
 

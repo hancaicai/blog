@@ -18,7 +18,7 @@
     </div>
     <div class="panel-body">
         <h2>${title}</h2>
-        <p>${article_id}</p>
+        <p>${article}</p>
 
 
     </div>

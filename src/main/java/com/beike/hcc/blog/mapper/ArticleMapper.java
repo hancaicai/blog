@@ -11,6 +11,6 @@ public interface ArticleMapper {
     ArrayList<Article> selectArticleByUserId(Integer userId);
     void insertArticle(Article article);
     void deleteArticleById(Integer articleId);
-    void updateArticle(Article article);
+    void updateArticle( Integer articleId,Article article);
     void deleteArticleByUserId(Integer userId);
 }

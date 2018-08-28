@@ -12,7 +12,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 @Configuration
-@MapperScan(basePackages = "com.example.distance.mapper",sqlSessionFactoryRef = "sqlSessionFactory")
+@MapperScan(basePackages = "com.beike.hcc.blog.mapper",sqlSessionFactoryRef = "sqlSessionFactory")
 public class DataSourceConfig {
     static final String MAPPER_LOCATION="classpath:mapper/*.xml";
     @Value("${jdbc.datasource.convention.username}")
