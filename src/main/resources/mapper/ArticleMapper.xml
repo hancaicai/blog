@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.beike.hcc.blog.mapper.UserMapper">
-    <resultMap id="BaseResultMap" type="com.beike.hcc.blog.model.User">
-        <id column="article_id" javaType="INTEGER" property="articleId"/>
-        <result column="title" javaType="VARCHAR" property="title"/>
-        <result column="update_time" javaType="TIMESTAMP" property="updateTime"/>
-        <result column="user_id" javaType="INTEGER" property="userId"/>
-        <result column="register_time" javaType="TIMESTAMP" property="registerTime"/>
-    </resultMap>
+    <!--<resultMap id="BaseResultMap" type="com.beike.hcc.blog.model.User">-->
+        <!--<id column="article_id" javaType="String" property="articleId"/>-->
+        <!--<result column="title" javaType="String" property="title"/>-->
+        <!--<result column="update_time" javaType="Date" property="updateTime"/>-->
+        <!--<result column="user_id" javaType="Integer" property="userId"/>-->
+        <!--<result column="register_time" javaType="Date" property="registerTime"/>-->
+    <!--</resultMap>-->
     <select id="selectArticleByUserId" parameterType="java.lang.Integer" resultType="com.beike.hcc.blog.model.Article">
         select * from t_hcc_article where user_id=#{userId}
     </select>
@@ -18,7 +18,7 @@
         update t_hcc_article
         set user_id=#{userId,jdbcType=INTEGER}
             title=#{title,jdbcType=VARCHAR}
-            update_time=#{updateTime,jdbeType=TIMESTAMP}
+            update_time=#{updateTime,jdbcType=TIMESTAMP}
         where article_id=#{articleId,jdbcType=INTEGER}
     </update>
     <delete id="deleteArticleById" parameterType="java.lang.Integer">
@@ -29,7 +29,7 @@
     </delete>
     <insert id="insertArticle" parameterType="com.beike.hcc.blog.model.Article">
         insert into t_hcc_article (article_id,title,post_time,update_time,user_id)
-        VALUES (#{articleId,jdbcType=INTEGER},#{title,jdbdType=VARCHAR},#{postTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},#{userId,jdbcType=INTEGER})
+        VALUES (#{articleId,jdbcType=INTEGER},#{title,jdbcType=VARCHAR},#{postTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},#{userId,jdbcType=INTEGER})
     </insert>
 
 </mapper>

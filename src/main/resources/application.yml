@@ -2,10 +2,10 @@
 jdbc:
   datasource:
     convention:
-      url: jdbc:mysql://10.33.106.50:3306/test # @Value("${jdbc.datasource.convention.username}")
-      username: hdic_admin
-      password: 654321
-      driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://10.33.106.50:3306/test # @Value("${jdbc.datasource.convention.username}")
+        username: hdic_admin
+        password: 654321
+        driverClassName: com.mysql.jdbc.Driver
     #下面为连接池的补充设置，应用到上面所有数据源中# 初始化大小，最小，最大
         initialSize: 5
         minIdle: 5
@@ -28,15 +28,24 @@ jdbc:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 #freemarker的配置
-freemarker:
+spring:
+  freemarker:
     request-context-attribute: req  #req访问request
     content-type: text/html
     cache: false #缓存配置
     charset: UTF-8 #编码格式
-
     suffix: .ftl  #后缀名
     enabled: true
     template-loader-path: classpath:/templates/ #模板加载路径 按需配置
+
+
+debug: true #控制台打印debug
+
+
+#端口
+server:
+  port: 8201
+
 
 
 

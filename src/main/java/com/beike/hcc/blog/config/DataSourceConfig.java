@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
+
 @Configuration
 @MapperScan(basePackages = "com.beike.hcc.blog.mapper",sqlSessionFactoryRef = "sqlSessionFactory")
 public class DataSourceConfig {
