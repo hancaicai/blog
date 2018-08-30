@@ -11,24 +11,31 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>登陆页面</h1>
-<div style="background-color: antiquewhite;border-bottom-left-radius: 25px">
 
+<div id="container" style="width: 500px">
+    <div id="header">
+        <h1 style="margin-bottom: 0;">${title}</h1>
+    </div>
+    <div id="article">
+        <p style="background-color: antiquewhite">${article}</p>
+    </div>
+
+    <div>
+        <form>
+            <input type="text"placeholder="你想对作者说什么？"><br>
+        </form>
+            <#list commentlist as comment>
+                 <P> $ {commnetContent}
+            <#else伪>
+                 <p>没有用户
+            </＃列表>
+
+    </div>
 </div>
 
-<form role="form">
-    <div class="form-group">
-        <label for="name">账号登陆</label><br>
-        账号：<input type="text" class="form-control" id="name" placeholder="请输入用户名/邮箱/手机号">账号<br>
-       密码：<input type="password" class="form-control" id="name" placeholder="输入密码"><br>
-    </div>
-    &nbsp <button  onclick="index.ftl" type="submit" class="btn btn-default">登陆</button>
 
-    &nbsp<button  onclick="register.ftl" type="button" class="btn btn-default">注册</button>
 
-</form>
 
- </div>
 
 
 <!-- Optional JavaScript -->

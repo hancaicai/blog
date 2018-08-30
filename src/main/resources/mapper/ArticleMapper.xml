@@ -11,6 +11,9 @@
     <select id="selectArticleByUserId" parameterType="java.lang.Integer" resultType="com.beike.hcc.blog.model.Article">
         select * from t_hcc_article where user_id=#{userId}
     </select>
+    <select id="selectArticle" resultType="com.beike.hcc.blog.model.Article">
+        select * from t_hcc_article
+    </select>
     <select id="selectArticleById" parameterType="java.lang.Integer" resultType="com.beike.hcc.blog.model.Article">
         select * from t_hcc_article where article_id=#{articelId}
     </select>

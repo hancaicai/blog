@@ -11,24 +11,24 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>登陆页面</h1>
-<div style="background-color: antiquewhite;border-bottom-left-radius: 25px">
+<h1>${user}的博客</h1>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        文章列表
+    </div>
+    <div class="panel-body">
+        <h2>${title}</h2>
+        <p>${articleCo}</p>
+
+
+    </div>
+
 
 </div>
 
-<form role="form">
-    <div class="form-group">
-        <label for="name">账号登陆</label><br>
-        账号：<input type="text" class="form-control" id="name" placeholder="请输入用户名/邮箱/手机号">账号<br>
-       密码：<input type="password" class="form-control" id="name" placeholder="输入密码"><br>
-    </div>
-    &nbsp <button  onclick="index.ftl" type="submit" class="btn btn-default">登陆</button>
 
-    &nbsp<button  onclick="register.ftl" type="button" class="btn btn-default">注册</button>
 
-</form>
 
- </div>
 
 
 <!-- Optional JavaScript -->

@@ -10,8 +10,14 @@ import java.util.ArrayList;
 public class ArticleServiceImpl implements ArticleService {
     @Autowired
     ArticleMapper articleMapper;
+    //获取文件列表根据时间排列
+    public ArrayList<Article> getArticleList(){
+        ArrayList<Article> articleList=articleMapper.selectArticle();
+        return articleList;
+    }
+
     //根据用户id获取所有的文章
-    public ArrayList<Article> getArticleList(Integer userId){
+    public ArrayList<Article> getArticleListByUserId(Integer userId){
         ArrayList<Article> articleList=articleMapper.selectArticleByUserId(userId);
         return articleList;
     }

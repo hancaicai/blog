@@ -8,6 +8,8 @@ public class Comment {
     private Date commentUpdateTime;
     private Integer articleId;
 
+    private  String Content;
+
     public Integer getUserId() {
         return userId;
     }
@@ -38,5 +40,12 @@ public class Comment {
 
     public void setArticleId(Integer articleId) {
         this.articleId = articleId;
+    }
+    public String getContent() {
+        return Content;
+    }
+
+    public void setContent(String content) {
+        Content = content;
     }
 }

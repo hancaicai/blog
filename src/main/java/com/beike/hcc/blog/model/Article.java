@@ -9,6 +9,10 @@ public class Article {
     private Date postTime;
     private Date updateTime;
 
+
+
+    private String content;
+
     public Integer getArticleId() {
         return articleId;
     }
@@ -47,5 +51,13 @@ public class Article {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
