@@ -1,6 +1,5 @@
 package com.beike.hcc.blog.service.impl;
 
-import com.beike.hcc.blog.mapper.ArticleMapper;
 import com.beike.hcc.blog.mapper.CommentMapper;
 import com.beike.hcc.blog.model.Comment;
 import com.beike.hcc.blog.service.CommentService;
@@ -9,11 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
-public class CommentServiceImpl implements CommentService{
+public class CommentServiceImpl implements CommentService {
 
     @Autowired
-     CommentMapper commentMapper;
+    CommentMapper commentMapper;
 
 
     //添加评论

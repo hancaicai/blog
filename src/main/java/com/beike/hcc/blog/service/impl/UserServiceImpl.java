@@ -12,7 +12,7 @@ import java.util.Date;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private  UserMapper userMapper;
+    private UserMapper userMapper;
     @Override
     //根据用户ID查询用户信息
     public User selectUserById(Integer userId){

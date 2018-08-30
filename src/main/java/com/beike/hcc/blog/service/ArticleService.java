@@ -14,7 +14,7 @@ public interface ArticleService {
     //根据用户ID批量删除文章
     void deleteArticleList(Integer userId);
     //更新文章
-    void updateArticle(Integer articleId,Article article);
+    void updateArticle(Integer articleId, Article article);
     //添加新的文章
     void addArticle(Article article);
 }

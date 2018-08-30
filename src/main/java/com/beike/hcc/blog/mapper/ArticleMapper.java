@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 @Mapper
 public interface ArticleMapper {
-    Article  selectArticleById(Integer articleId);
+    Article selectArticleById(Integer articleId);
     ArrayList<Article> selectArticleByUserId(Integer userId);
     void insertArticle(Article article);
     void deleteArticleById(Integer articleId);
-    void updateArticle( Integer articleId,Article article);
+    void updateArticle(Integer articleId, Article article);
     void deleteArticleByUserId(Integer userId);
 }

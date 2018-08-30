@@ -1,11 +1,12 @@
 package com.beike.hcc.blog.service;
 
 import com.beike.hcc.blog.model.Comment;
+
 import java.util.List;
 
 public interface CommentService {
     //添加评论
-    public void insertComment( Comment comment) ;
+    public void insertComment(Comment comment) ;
 
     //根据文章id获取评论列表
     public List<Comment> listCommentByArticleId(Integer articleId);
