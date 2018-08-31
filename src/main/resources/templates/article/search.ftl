@@ -26,7 +26,7 @@
         </form>
             <#list commentlist as comment>
                  <P> $ {commnetContent}
-            <#else伪>
+            <#else>
                  <p>没有用户
             </＃列表>
 

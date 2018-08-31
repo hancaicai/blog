@@ -4,9 +4,11 @@ import com.beike.hcc.blog.mapper.ArticleMapper;
 import com.beike.hcc.blog.model.Article;
 import com.beike.hcc.blog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
+@Service
 public class ArticleServiceImpl implements ArticleService {
     @Autowired
     ArticleMapper articleMapper;

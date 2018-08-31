@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,32 +11,8 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>${user}的博客</h1>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        文章列表
-    </div>
-    <div class="panel-body">
-        <#--<#list titles as title>-->
-           <#--<p>${title}-->
-        <#--<#else>-->
-           <#--<p>No users-->
-        <#--</#list>-->
 
-        ${title}
-
-        ${article}
-
-
-
-    </div>
-
-
-</div>
-
-
-
-
+<h1 href="/userLogin">信息错误请重新输入</h1>
 
 
 <!-- Optional JavaScript -->
@@ -47,4 +22,3 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
-

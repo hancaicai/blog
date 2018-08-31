@@ -1,6 +1,6 @@
-<<<<<<< Updated upstream
 
-#Êı¾İ¿âµÄÅäÖÃ
+
+#ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 jdbc:
   datasource:
     convention:
@@ -8,29 +8,29 @@ jdbc:
         username: hdic_admin
         password: 654321
         driverClassName: com.mysql.jdbc.Driver
-    #ÏÂÃæÎªÁ¬½Ó³ØµÄ²¹³äÉèÖÃ£¬Ó¦ÓÃµ½ÉÏÃæËùÓĞÊı¾İÔ´ÖĞ# ³õÊ¼»¯´óĞ¡£¬×îĞ¡£¬×î´ó
+    #ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ó³ØµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½Ó¦ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½# ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½
         initialSize: 5
         minIdle: 5
         maxActive: 20
-    # ÅäÖÃ»ñÈ¡Á¬½ÓµÈ´ı³¬Ê±µÄÊ±¼ä
+    # ï¿½ï¿½ï¿½Ã»ï¿½È¡ï¿½ï¿½ï¿½ÓµÈ´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ê±ï¿½ï¿½
         maxWait: 60000
-    # ÅäÖÃ¼ä¸ô¶à¾Ã²Å½øĞĞÒ»´Î¼ì²â£¬¼ì²âĞèÒª¹Ø±ÕµÄ¿ÕÏĞÁ¬½Ó£¬µ¥Î»ÊÇºÁÃë
+    # ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½Ã²Å½ï¿½ï¿½ï¿½Ò»ï¿½Î¼ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ø±ÕµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Î»ï¿½Çºï¿½ï¿½ï¿½
         timeBetweenEvictionRunsMillis: 60000
-    # ÅäÖÃÒ»¸öÁ¬½ÓÔÚ³ØÖĞ×îĞ¡Éú´æµÄÊ±¼ä£¬µ¥Î»ÊÇºÁÃë
+    # ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½Çºï¿½ï¿½ï¿½
         minEvictableIdleTimeMillis: 300000
         validationQuery: SELECT 1 FROM DUAL
         testWhileIdle: true
         testOnBorrow: false
         testOnReturn: false
-    # ´ò¿ªPSCache£¬²¢ÇÒÖ¸¶¨Ã¿¸öÁ¬½ÓÉÏPSCacheµÄ´óĞ¡
+    # ï¿½ï¿½PSCacheï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PSCacheï¿½Ä´ï¿½Ğ¡
         poolPreparedStatements: true
         maxPoolPreparedStatementPerConnectionSize: 20
-    # ÅäÖÃ¼à¿ØÍ³¼ÆÀ¹½ØµÄfilters£¬È¥µôºó¼à¿Ø½çÃæsqlÎŞ·¨Í³¼Æ£¬'wall'ÓÃÓÚ·À»ğÇ½
+    # ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½Í³ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½filtersï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½Ø½ï¿½ï¿½ï¿½sqlï¿½Ş·ï¿½Í³ï¿½Æ£ï¿½'wall'ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½Ç½
         filters: stat,wall,log4j
-    # Í¨¹ıconnectPropertiesÊôĞÔÀ´´ò¿ªmergeSql¹¦ÄÜ£»ÂıSQL¼ÇÂ¼
+    # Í¨ï¿½ï¿½connectPropertiesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mergeSqlï¿½ï¿½ï¿½Ü£ï¿½ï¿½ï¿½SQLï¿½ï¿½Â¼
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
-#freemarkerµÄÅäÖÃ
+#freemarkerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 spring:
     freemarker:
           allow-request-override: false
@@ -49,57 +49,5 @@ server:
     port: 8080
 
 
-debug: true #¿ØÖÆÌ¨´òÓ¡debug
-=======
-#æ•°æ®åº“çš„é…ç½®
-jdbc:
-  datasource:
-    convention:
-        url: jdbc:mysql://10.33.106.50:3306/test # @Value("${jdbc.datasource.convention.username}")
-        username: hdic_admin
-        password: 654321
-        driverClassName: com.mysql.jdbc.Driver
-    #ä¸‹é¢ä¸ºè¿æ¥æ± çš„è¡¥å……è®¾ç½®ï¼Œåº”ç”¨åˆ°ä¸Šé¢æ‰€æœ‰æ•°æ®æºä¸­# åˆå§‹åŒ–å¤§å°ï¼Œæœ€å°ï¼Œæœ€å¤§
-        initialSize: 5
-        minIdle: 5
-        maxActive: 20
-    # é…ç½®è·å–è¿æ¥ç­‰å¾…è¶…æ—¶çš„æ—¶é—´
-        maxWait: 60000
-    # é…ç½®é—´éš”å¤šä¹…æ‰è¿›è¡Œä¸€æ¬¡æ£€æµ‹ï¼Œæ£€æµ‹éœ€è¦å…³é—­çš„ç©ºé—²è¿æ¥ï¼Œå•ä½æ˜¯æ¯«ç§’
-        timeBetweenEvictionRunsMillis: 60000
-    # é…ç½®ä¸€ä¸ªè¿æ¥åœ¨æ± ä¸­æœ€å°ç”Ÿå­˜çš„æ—¶é—´ï¼Œå•ä½æ˜¯æ¯«ç§’
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: SELECT 1 FROM DUAL
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-    # æ‰“å¼€PSCacheï¼Œå¹¶ä¸”æŒ‡å®šæ¯ä¸ªè¿æ¥ä¸ŠPSCacheçš„å¤§å°
-        poolPreparedStatements: true
-        maxPoolPreparedStatementPerConnectionSize: 20
-    # é…ç½®ç›‘æ§ç»Ÿè®¡æ‹¦æˆªçš„filtersï¼Œå»æ‰åç›‘æ§ç•Œé¢sqlæ— æ³•ç»Ÿè®¡ï¼Œ'wall'ç”¨äºé˜²ç«å¢™
-        filters: stat,wall,log4j
-    # é€šè¿‡connectPropertieså±æ€§æ¥æ‰“å¼€mergeSqlåŠŸèƒ½ï¼›æ…¢SQLè®°å½•
-        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-#freemarkerçš„é…ç½®
-spring:
-  freemarker:
-    request-context-attribute: req  #reqè®¿é—®request
-    content-type: text/html
-    cache: false #ç¼“å­˜é…ç½®
-    charset: UTF-8 #ç¼–ç æ ¼å¼
-    suffix: .ftl  #åç¼€å
-    enabled: true
-    template-loader-path: classpath:/templates/ #æ¨¡æ¿åŠ è½½è·¯å¾„ æŒ‰éœ€é…ç½®
+debug: true #ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½Ó¡debug
 
-
-debug: true #æ§åˆ¶å°æ‰“å°debug
-
-
-#ç«¯å£
-server:
-  port: 8201
-
-
-
-
->>>>>>> Stashed changes

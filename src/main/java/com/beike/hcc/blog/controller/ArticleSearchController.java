@@ -11,19 +11,22 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 public class ArticleSearchController {
 
-    @RequestMapping("/article/search"); //url访问的域名
+   // @RequestMapping("/article/search"); //url访问的域名
 
     @Autowired
-    CommentServiceImpl commentService;
+    CommentService commentService;
+
+
     public ModelAndView ArticleIndexController(Article article){
         // model.addObject("title","hahahahah");
         //return "article/index";
         Integer articleId= article.getArticleId();
-        ArrayList<Comment> commentList= new ArrayList(commentService.getCommentByArticleId(articleId));
+        List<Comment> commentList= commentService.getCommentByArticleId(articleId);
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.setViewName("/article/index");
         modelAndView.addObject("title",article.getTitle());
