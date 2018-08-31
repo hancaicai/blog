@@ -12,7 +12,7 @@
         <select id="selectUserById" resultMap="userResultMap" parameterType="java.lang.Integer">
                 select * from t_hcc_user where user_id=#{userId}
         </select>
-        <select id="selectUserById" resultMap="userResultMap" parameterType="java.lang.Integer">
+        <select id="selectUserByName" resultMap="userResultMap" parameterType="java.lang.Integer">
                 select * from t_hcc_user where user_name=#{userName}
         </select>
         <delete id="deleteUserById" parameterType="java.lang.Integer">
