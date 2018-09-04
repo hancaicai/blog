@@ -7,8 +7,19 @@ public class Comment {
     private Date commentPostTime;
     private Date commentUpdateTime;
     private Integer articleId;
+    private Integer commentId;
 
     private  String Content;
+
+    public Integer getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(Integer commentId) {
+        this.commentId = commentId;
+    }
+
+
 
     public Integer getUserId() {
         return userId;

@@ -18,16 +18,16 @@
         文章列表
     </div>
     <div class="panel-body">
-        <#--<#list titles as title>-->
-           <#--<p>${title}-->
-        <#--<#else>-->
-           <#--<p>No users-->
-        <#--</#list>-->
+       <#list articleList as articleList>
+         <table>
+            <tr>
+                <a href="/articleDetail?articleId=${article.articleId}">${article.title}</a>
 
-        ${title}
+            </tr>
 
-        ${article}
+         </table>
 
+       </#list>
 
 
     </div>

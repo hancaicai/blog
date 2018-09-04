@@ -11,22 +11,23 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>登陆页面</h1>
+<h1 style="position: absolute;right: 200px;top:100px">登陆页面</h1>
 <div style="background-color: antiquewhite;border-bottom-left-radius: 25px">
 
 </div>
+<div class="form-group" style="position: absolute;right: 200px;top: 170px;">
+    <form role="form" action="loginConfirm">
 
-<form role="form">
-    <div class="form-group">
         <label for="name">账号登陆</label><br>
-        账号：<input type="text" class="form-control" id="name" placeholder="请输入用户名/邮箱/手机号">账号<br>
-       密码：<input type="password" class="form-control" id="name" placeholder="输入密码"><br>
-    </div>
-    &nbsp <button  onclick="index.ftl" type="submit" class="btn btn-default">登陆</button>
+        账号：<input type="text" class="form-control" id="name" name="name" placeholder="请输入用户名/邮箱/手机号"><br>
+       密码：<input type="password" class="form-control" id="name" name="password" placeholder="输入密码"><br>
 
-    &nbsp<button  onclick="register.ftl" type="button" class="btn btn-default">注册</button>
+    &nbsp <button  onclick="{location.href='/loginConfirm'}" type="submit" class="btn btn-default">登陆</button>
 
-</form>
+    &nbsp<button onclick="{location.href='/register'}" type="button" class="btn btn-default">注册</button>
+
+    </form>
+</div>
 
  </div>
 

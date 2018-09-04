@@ -15,6 +15,7 @@ public class ArticleServiceImpl implements ArticleService {
     //获取文件列表根据时间排列
     public ArrayList<Article> getArticleList(){
         ArrayList<Article> articleList=articleMapper.selectArticle();
+        System.out.print(articleList.size());
         return articleList;
     }
 

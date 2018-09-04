@@ -12,7 +12,7 @@
         <select id="selectUserById" resultMap="userResultMap" parameterType="java.lang.Integer">
                 select * from t_hcc_user where user_id=#{userId}
         </select>
-        <select id="selectUserByName" resultMap="userResultMap" parameterType="java.lang.Integer">
+        <select id="selectUserByName" resultMap="userResultMap" parameterType="String">
                 select * from t_hcc_user where user_name=#{userName}
         </select>
         <delete id="deleteUserById" parameterType="java.lang.Integer">
@@ -20,7 +20,7 @@
         </delete>
         <insert id="insertUser" parameterType="com.beike.hcc.blog.model.User">
                 insert into t_hcc_user (user_id,user_name,password,user_email,last_login_time,register_time)
-                VALUES (#{userId,jdbcType=INTEGER},#{userName,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},
+                VALUES (#{userId,jdbcType=INTEGER},#{userName,jdbcType=VARCHAR},#{passWord,jdbcType=VARCHAR},
                 #{userEmail,jdbcType=VARCHAR},#{lastLoginTime,jdbcType=TIMESTAMP},#{registerTime,jdbcType=TIMESTAMP})
         </insert>
         <update id="updateUser" parameterType="com.beike.hcc.blog.model.User">

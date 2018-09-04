@@ -12,7 +12,33 @@
 </head>
 <body>
 
-<h1><a href="/userLogin">信息错误请重新输入</a></h1>
+<div id="container" style="width: 500px">
+    <div id="header">
+        <h1 style="margin-bottom: 0;">${title}</h1>
+    </div>
+    <div id="article">
+        <p style="background-color: antiquewhite">${content}</p>
+
+    </div>
+
+    <div>
+        <form>
+            <input type="text"placeholder="你想对作者说什么？">
+
+            <br>
+        </form>
+        <#list commentList as comment>
+                 <P> $ {commnet.content}
+        </#list>
+
+    </div>
+   <input type="button" value="返回" onclick="window.history.back()">
+
+</div>
+
+
+
+
 
 
 <!-- Optional JavaScript -->

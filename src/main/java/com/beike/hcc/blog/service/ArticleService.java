@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public interface ArticleService {
     //根据用户id获取所有的文章
     ArrayList<Article> getArticleListByUserId(Integer userId);
-
+//获取所有文章
      ArrayList<Article> getArticleList();
     //根据文章id获取文章
      Article getArticle(Integer articleId);

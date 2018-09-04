@@ -11,26 +11,56 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>注册页面</h1>
+<h1 style="position: absolute;right: 200px;top:100px">注册页面</h1>
 
-<form role="form">
-    <div class="form-group">
-        <label for="register">账号注册</label>
 
-        <label for="name">姓名</label>
-        <input type="text" class="form-control" id="name" placeholder="姓名"><br>
-        <label for="mail">邮箱</label>
-        <input type="text" class="form-control" id="mail" placeholder="邮箱"><br>
-        <label for="phone">手机</label>
-        <input type="text" class="form-control" id="phone" placeholder="手机号"><br>
-        <label for="password">密码</label>
-        <input type="password" class="form-control" id="password" placeholder="密码"><br>
-        <label for="confirm">确认密码</label>
-        <input type="password" class="form-control" id="confirm" placeholder="确认密码"><br>
+<!--form表单通过里面的name与controller中的request相连接-->
+<!--Spring中可以不用request直接传递形参，有两种匹配的方式-->
+<div class="form-group" style="position:absolute;right: 200px;top: 170px;" >
+<form role="form" action="/request">
 
-    </div>
-    <button type="submit" class="btn btn-default">注册</button>
+       <label for="register">账号注册</label>
+
+      <!--  <label for="name">姓名</label>-->
+    <tr>
+        <td>姓名</td>
+        <td><input type="text" class="form-control" id="name" name="name" placeholder="姓名" /></td>
+
+    </tr>
+    <tr>
+        <td>邮箱</td>
+        <td>
+            <input type="text" class="form-control" id="mail"  name="mail" placeholder="邮箱" />
+        </td>
+
+
+    </tr>
+    <tr>
+        <td>手机</td>
+        <td>
+            <input type="text" class="form-control" id="phone"  name="phone" placeholder="手机号"\>
+        </td>
+    </tr>
+
+    <tr>
+        <td>密码</td>
+        <td>
+            <input type="password" class="form-control" id="password"  name="password" placeholder="密码" th:field="*{password}"\>
+        </td>
+
+    </tr>
+    <tr>
+        <td>确认密码</td>
+        <td><input type="password" class="form-control" id="confirm" name="confirm" placeholder="确认密码"\></td>
+    </tr>
+    <tr>
+        <button type="submit" class="btn btn-default" style="position: absolute;right: 70px">注册</button>
+    </tr>
+
+
 </form>
+
+</div>
 
 </div>
 

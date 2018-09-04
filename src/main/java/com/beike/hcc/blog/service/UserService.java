@@ -13,6 +13,6 @@ public interface UserService {
     //删除用户信息
      void deleteUserById(Integer User);
     //添加用户信息
-     void inserUser(User user);
+     void insertUser(User user);
 
 }

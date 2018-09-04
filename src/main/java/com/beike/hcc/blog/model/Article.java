@@ -8,9 +8,6 @@ public class Article {
     private String title;
     private Date postTime;
     private Date updateTime;
-
-
-
     private String content;
 
     public Integer getArticleId() {
