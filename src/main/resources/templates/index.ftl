@@ -11,15 +11,26 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>${user}的博客</h1>
+<h1>欢迎${user}</h1>
 <div class="panel panel-default">
     <div class="panel-heading">
-        文章列表
+        <a href="articleIndex?userId=${userId}"> 我的博客 </a>
     </div>
     <div class="panel-body">
-        <h2>${title}</h2>
-        <p>${articleCo}</p>
 
+       <#list articleList as article>
+           <table>
+               <tr>
+                   <a href="/articleDetail?articleId=${article.articleId}">${article.title}</a>
+
+               </tr>
+
+           </table>
+
+
+
+
+        </#list>
 
     </div>
 
