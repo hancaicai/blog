@@ -8,7 +8,7 @@ public interface CommentService {
     public void insertComment( Comment comment) ;
 
     //根据文章id获取评论列表
-    public List<Comment> listCommentByArticleId(Integer articleId);
+    public List<Comment> getCommentByArticleId(Integer articleId);
 
     //根据id获取评论
     public Comment getCommentById(Integer commentId) ;

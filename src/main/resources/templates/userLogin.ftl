@@ -12,16 +12,19 @@
 </head>
 <body>
 <h1>登陆页面</h1>
+<div style="background-color: antiquewhite;border-bottom-left-radius: 25px">
+
+</div>
 
 <form role="form">
     <div class="form-group">
-        <label for="name">账号登陆</label>
-        <input type="text" class="form-control" id="name" placeholder="请输入用户名/邮箱/手机号">
-        <input type="password" class="form-control" id="name" placeholder="输入密码">
+        <label for="name">账号登陆</label><br>
+        账号：<input type="text" class="form-control" id="name" placeholder="请输入用户名/邮箱/手机号">账号<br>
+       密码：<input type="password" class="form-control" id="name" placeholder="输入密码"><br>
     </div>
-    <button type="submit" class="btn btn-default">登陆</button>
+    &nbsp <button  onclick="index.ftl" type="submit" class="btn btn-default">登陆</button>
 
-    <button  onclick="register.ftl" type="button" class="btn btn-default">注册</button>
+    &nbsp<button  onclick="register.ftl" type="button" class="btn btn-default">注册</button>
 
 </form>
 

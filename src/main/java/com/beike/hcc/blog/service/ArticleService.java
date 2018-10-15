@@ -6,7 +6,9 @@ import java.util.ArrayList;
 
 public interface ArticleService {
     //根据用户id获取所有的文章
-     ArrayList<Article> getArticleList(Integer userId);
+    ArrayList<Article> getArticleListByUserId(Integer userId);
+
+     ArrayList<Article> getArticleList();
     //根据文章id获取文章
      Article getArticle(Integer articleId);
     //根据文章的id删除文章

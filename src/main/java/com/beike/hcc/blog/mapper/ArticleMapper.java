@@ -8,6 +8,7 @@ import java.util.ArrayList;
 @Mapper
 public interface ArticleMapper {
     Article  selectArticleById(Integer articleId);
+    ArrayList<Article> selectArticle();
     ArrayList<Article> selectArticleByUserId(Integer userId);
     void insertArticle(Article article);
     void deleteArticleById(Integer articleId);

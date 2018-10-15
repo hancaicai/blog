@@ -18,7 +18,7 @@
     </div>
     <div class="panel-body">
         <h2>${title}</h2>
-        <p>${article}</p>
+        <p>${articleCo}</p>
 
 
     </div>

@@ -18,15 +18,15 @@
         <label for="register">账号注册</label>
 
         <label for="name">姓名</label>
-        <input type="text" class="form-control" id="name" placeholder="姓名">
+        <input type="text" class="form-control" id="name" placeholder="姓名"><br>
         <label for="mail">邮箱</label>
-        <input type="text" class="form-control" id="name" placeholder="邮箱">
+        <input type="text" class="form-control" id="mail" placeholder="邮箱"><br>
         <label for="phone">手机</label>
-        <input type="text" class="form-control" id="name" placeholder="手机号">
+        <input type="text" class="form-control" id="phone" placeholder="手机号"><br>
         <label for="password">密码</label>
-        <input type="password" class="form-control" id="name" placeholder="密码">
+        <input type="password" class="form-control" id="password" placeholder="密码"><br>
         <label for="confirm">确认密码</label>
-        <input type="password" class="form-control" id="name" placeholder="确认密码">
+        <input type="password" class="form-control" id="confirm" placeholder="确认密码"><br>
 
     </div>
     <button type="submit" class="btn btn-default">注册</button>

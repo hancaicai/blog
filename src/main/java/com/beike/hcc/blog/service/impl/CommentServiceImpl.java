@@ -22,7 +22,7 @@ public class CommentServiceImpl implements CommentService{
     }
 
     //根据文章id获取评论列表
-    public List<Comment> listCommentByArticleId(Integer articleId){
+    public List<Comment> getCommentByArticleId(Integer articleId){
         List<Comment> commentList=new ArrayList<Comment>(commentMapper.selectCommentByArticleId(articleId));
         return commentList;
     }

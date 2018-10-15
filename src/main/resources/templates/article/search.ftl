@@ -11,23 +11,26 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>${user}的博客</h1>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        文章列表
+
+<div id="container" style="width: 500px">
+    <div id="header">
+        <h1 style="margin-bottom: 0;">${title}</h1>
     </div>
-    <div class="panel-body">
-        <#list titles as title>
-           <p>${title}
-        <#else>
-           <p>No users
-        </#list>
-
-
-
+    <div id="article">
+        <p style="background-color: antiquewhite">${article}</p>
     </div>
 
+    <div>
+        <form>
+            <input type="text"placeholder="你想对作者说什么？"><br>
+        </form>
+            <#list commentlist as comment>
+                 <P> $ {commnetContent}
+            <#else伪>
+                 <p>没有用户
+            </＃列表>
 
+    </div>
 </div>
 
 
